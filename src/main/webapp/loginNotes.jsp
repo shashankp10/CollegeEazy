@@ -27,40 +27,28 @@
 						<figure>
 						<!-- 	<img src="images/signin-image.jpg" alt="sign in image">   -->
 						</figure>
-						<a href="registration.jsp" class="signup-image-link">Create an
-							account</a>
 					</div>
 
 					<div class="signin-form">
-						<h2 class="form-title">Login</h2>
-						<form method="post" action="login" class="register-form"
+						<h3 class="form-title">Login To Upload Notes</h3>
+						<form method="post" action="uploadnotes" class="register-form"
 							id="login-form">
 							<div class="form-group">
 								<label for="username"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
 									type="text" name="username" id="username"
-									placeholder="Enrollment No." />
+									placeholder="UserID" />
 							</div>
 							<div class="form-group">
 								<label for="password"><i class="zmdi zmdi-lock"></i></label> <input
 									type="password" name="password" id="password"
 									placeholder="Password" />
 							</div>
-						<!--  <div class="form-group">
-								<input type="checkbox" name="remember-me" id="remember-me"
-									class="agree-term" /> <label for="remember-me"
-									class="label-agree-term"><span><span></span></span>Remember
-									me</label>
-							</div>
-							-->	
-							
-							<!-- Add an option of forget password? -->
 							<div class="form-group form-button">
 								<input type="submit" name="signin" id="signin"
 									class="form-submit" value="Login" />
 							</div>
 						</form>
-					
 					</div>
 				</div>
 			</div>

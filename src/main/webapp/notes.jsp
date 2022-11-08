@@ -48,31 +48,74 @@
 			</div>
 		</div>
 	</nav>
-	<!-- Masthead-->
-	<header class="masthead bg-primary text-white text-center">
-		<div class="container d-flex align-items-center flex-column">
-			<!-- Masthead Avatar Image-->
-			
-			<!-- Masthead Heading-->
-			<h1 class="masthead-heading text-uppercase mb-0">Notes</h1>
-			<!-- Icon Divider-->
-			<div class="divider-custom divider-light">
-				<div class="divider-custom-line"></div>
-				<div class="divider-custom-icon">
-					<i class="fas fa-star"></i>
-				</div>
-				<div class="divider-custom-line"></div>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+	<div class="container d-flex align-items-center flex-column">
+		<!-- Masthead Heading-->
+		<h1 class="masthead-heading text-uppercase mb-0">Notes</h1>
+		<!-- Icon Divider-->
+		<div class="divider-custom divider-light">
+			<div class="divider-custom-line"></div>
+			<div class="divider-custom-icon">
+				<i class="fas fa-star"></i>
 			</div>
-			<!-- Masthead Subheading-->
+			<div class="divider-custom-line"></div>
 		</div>
-	</header>
+		<!-- Masthead Subheading-->
+	</div>	
+	<style>
+        .button-container-div {
+            text-align: center;
+            border: 1px solid coral;
+            height: 40vh;
+            width: 50vw;
+        }
+    </style>
+	<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Choose Branch
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><a class="dropdown-item" href="#">CSE</a>
+    	
+    	
+    	
+    	
+    </li>
+    <li><a class="dropdown-item" href="#">IT</a></li>
+    <li><a class="dropdown-item" href="#">AI & ML</a></li>
+    <li><a class="dropdown-item" href="#">AI & DS</a></li>
+   	<li><a class="dropdown-item" href="#">ME</a></li>
+   	<li><a class="dropdown-item" href="#">EEE</a></li>
+   	<li><a class="dropdown-item" href="#">ECE</a></li>
+   	<li><a class="dropdown-item" href="#">CE</a></li>
+   	  
+  </ul>
+</div>
+</header>	
+	
+	
+	
 	<!-- Subject Section-->
 	<section class="page-section portfolio" id="portfolio">
 		<div class="container">
-			<!-- Portfolio Section Heading-->
-			<h2
-				class="page-section-heading text-center text-uppercase text-secondary mb-0">
-				<%=session.getAttribute("branch") %> - Subjects</h2>
+			<!-- Subject Section Heading-->
+			<div class="col-md-6 col-lg-4 mb-5">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
+						data-bs-target="#pdfs">
+						<div
+							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div
+								class="portfolio-item-caption-content text-center text-white">
+								<i class="fas fa-plus fa-3x"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+							<%=session.getAttribute("branch") %> - Subjects</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -81,103 +124,55 @@
 				</div>
 				<div class="divider-custom-line"></div>
 			</div>
-			<!-- Portfolio Grid Items-->
+			<!-- Subjects Grid Items-->
 			<div class="row justify-content-center">
-				<!-- Portfolio Item 1-->
+				<!-- Subject 1-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
-						data-bs-target="#portfolioModal1">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/cabin.png"
-							alt="..." />
+						data-bs-target="#portfolioModal1" >
+						<h2><br><br>Data Structure</h2>
 					</div>
 				</div>
-				<!-- Portfolio Item 2-->
+				<!-- Subject 2-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal2">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/cake.png"
-							alt="..." />
+						<h2><br><br>Object-Orientated Programming</h2>
 					</div>
 				</div>
-				<!-- Portfolio Item 3-->
+				<!-- Subject 3-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal3">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/circus.png"
-							alt="..." />
+						<h2><br><br>Discrete Mathematics</h2>
 					</div>
 				</div>
-				<!-- Portfolio Item 4-->
+				<!-- Subject 4-->
 				<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal4">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/game.png"
-							alt="..." />
+						<h2><br><br>Computational Methods</h2>
 					</div>
 				</div>
-				<!-- Portfolio Item 5-->
+				<!-- Subject 5-->
 				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal5">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/safe.png"
-							alt="..." />
+						<h2><br><br>Digital Logic and Computer Design</h2>
 					</div>
 				</div>
-				<!-- Portfolio Item 6-->
+				<!-- Subject 6-->
 				<div class="col-md-6 col-lg-4">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal6">
-						<div
-							class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-							<div
-								class="portfolio-item-caption-content text-center text-white">
-								<i class="fas fa-plus fa-3x"></i>
-							</div>
-						</div>
-						<img class="img-fluid" src="assets/img/portfolio/submarine.png"
-							alt="..." />
+						<h2><br><br>Indian Knowledge System</h2>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Portfolio Modals-->
-	<!-- Portfolio Modal 1-->
+	<!-- Subjects -->
+	<!-- Subject 1-->
 	<div class="portfolio-modal modal fade" id="portfolioModal1"
 		tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
@@ -190,10 +185,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Log
-									Cabin</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Data Structure</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -202,19 +196,40 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/cabin.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=7wWfdTGWHm4&list=PLU5x-SQTjZT7Byc8_BTdtMQkZ_7rjEUUm">Ankit Verma</a></li>
+   										 <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=WQoB2z67hvY&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA">Love Babbar</a></li>
+   									 	<li><a class="dropdown-item" href="#"></a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Website Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
@@ -235,10 +250,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty
-									Cake</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Object-Orientated Programming</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -247,19 +261,38 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/cake.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=i_5pvt7ag7E&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&index=46">Love Babbar</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Website Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
@@ -268,7 +301,7 @@
 		</div>
 	</div>
 	<!-- Portfolio Modal 3-->
-	<div class="portfolio-modal modal fade" id="portfolioModal3"
+		<div class="portfolio-modal modal fade" id="portfolioModal3"
 		tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
@@ -280,10 +313,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus
-									Tent</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Discrete mathematics</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -292,19 +324,38 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/circus.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
@@ -313,7 +364,7 @@
 		</div>
 	</div>
 	<!-- Portfolio Modal 4-->
-	<div class="portfolio-modal modal fade" id="portfolioModal4"
+		<div class="portfolio-modal modal fade" id="portfolioModal4"
 		tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
@@ -325,9 +376,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Controller</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Computational Methods</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -336,19 +387,38 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/game.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
@@ -357,7 +427,7 @@
 		</div>
 	</div>
 	<!-- Portfolio Modal 5-->
-	<div class="portfolio-modal modal fade" id="portfolioModal5"
+		<div class="portfolio-modal modal fade" id="portfolioModal5"
 		tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
@@ -369,10 +439,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Locked
-									Safe</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Digital Logic and Computer Design</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -381,19 +450,38 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/safe.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                   </ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
@@ -402,7 +490,7 @@
 		</div>
 	</div>
 	<!-- Portfolio Modal 6-->
-	<div class="portfolio-modal modal fade" id="portfolioModal6"
+		<div class="portfolio-modal modal fade" id="portfolioModal6"
 		tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
@@ -414,9 +502,9 @@
 					<div class="container">
 						<div class="row justify-content-center">
 							<div class="col-lg-8">
-								<!-- Portfolio Modal - Title-->
+								<!-- Subject Modal - Title-->
 								<h2
-									class="portfolio-modal-title text-secondary text-uppercase mb-0">Submarine</h2>
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Indian Knowledge System</h2>
 								<!-- Icon Divider-->
 								<div class="divider-custom">
 									<div class="divider-custom-line"></div>
@@ -425,26 +513,50 @@
 									</div>
 									<div class="divider-custom-line"></div>
 								</div>
-								<!-- Portfolio Modal - Image-->
-								<img class="img-fluid rounded mb-5"
-									src="assets/img/portfolio/submarine.png" alt="..." />
-								<!-- Portfolio Modal - Text-->
-								<p class="mb-4">Lorem ipsum dolor sit amet, consectetur
-									adipisicing elit. Mollitia neque assumenda ipsam nihil,
-									molestias magnam, recusandae quos quis inventore quisquam velit
-									asperiores, vitae? Reprehenderit soluta, eos quod consequuntur
-									itaque. Nam.</p>
-								<button class="btn btn-primary" href="#!"
-									data-bs-dismiss="modal">
-									<i class="fas fa-times fa-fw"></i> Close Window
-								</button>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>		
+	</div>
+	
+	<div class="d-grid gap-2 col-6 mx-auto">
+  		<button class="btn btn-primary" type="button"  onclick="window.location='loginNotes.jsp'" ><h5>Upload Notes</h5></button>
+	</div>
+
 	<!-- Footer-->
 	<footer class="footer text-center">
 		<div class="container">
@@ -452,9 +564,7 @@
 				<!-- Footer Contact Us-->
 				<div class="col-lg-4 mb-5 mb-lg-0">
 					<h4 class="text-uppercase mb-4">Contact Us</h4>
-					<p class="lead mb-0">
-						Shashank Pandey 
-					</p>
+					<h6 class="lead mb-0">Shashank Pandey </h6>
 				</div>
 			</div>
 		</div>

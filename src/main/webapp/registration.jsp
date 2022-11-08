@@ -25,22 +25,25 @@
 					<div class="signup-form">
 						<h2 class="form-title">Sign Up</h2>
 					 
-						<form method="post" action="register" class="register-form"
+						<form method="post" action="register" onsubmit="required()" class="register-form"
 							id="register-form">
 							<div class="form-group">
 								<label for="name"><i
 									class="zmdi zmdi-account material-icons-name"></i></label> <input
 									type="text" name="name" id="name" placeholder="Enter your Name" />
+									
 							</div>
 							<div class="form-group">
 								<label for="enrollment"><i class="zmdi zmdi-account material-icons-name"></i></label>
 								<input type="number" name="enrollment" id="enrollment"
 									placeholder="Enter your Enrollment No." />
+									
 							</div>
 							<div class="form-group">
 								<label for="branch"><i class="zmdi zmdi-account material-icons-name"></i></label>
 								<input type="text" name="branch" id="branch"
 									placeholder="Enter your Branch" />
+								
 							</div>
 						<!-- 	<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
@@ -50,12 +53,14 @@
 							<div class="form-group">
 								<label for="pass"><i class="zmdi zmdi-lock"></i></label> <input
 									type="password" name="pass" id="pass" placeholder="Enter your Password" />
+							
 							</div>
 							
 							 <div class="form-group">
 								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
 								<input type="text" name="contact" id="contact"
 									placeholder="Enter your Contact no." />
+								
 							</div>
 											<!-- <div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
@@ -72,9 +77,9 @@
 					</div>
 					<div class="signup-image">
 						<figure>
-						<!--  	<img src="images/signup-image.jpg" alt="sing up image"> -->
+						<!--  	<img src="images/signup-image.jpg" alt="sign up image"> -->
 						</figure>
-						<a href="login.jsp" class="signup-image-link">I am already
+						<a href="login.jsp" class="signup-image-link">I am already a
 							member</a>
 					</div>
 				</div>
@@ -94,6 +99,17 @@
 	var status = document.getElementById("status").value;
 	if(status=="success"){
 		swal("Congrats","AccountCreated Successfully!!","success");
+	}
+	function required(){
+		var empt = document.forms["name"].value;
+		if (empt == ""){
+			alert("Please input a Value");
+		return false;
+		}
+		else {
+			alert('Code has accepted : you can try another');
+			return true; 
+		}
 	}
 </script>
 

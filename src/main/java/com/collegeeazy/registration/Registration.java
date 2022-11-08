@@ -40,7 +40,8 @@ public class Registration extends HttpServlet {
 			
 			int rowCount = pst.executeUpdate();
 			dispatcher = request.getRequestDispatcher("registration.jsp");
-			if(rowCount>0) {
+			if(rowCount>0 && uname!=null && upwd!=null && umobile!=null 
+					&& enrollment!=null && branch!=null) {
 				request.setAttribute("status","success");	
 			}
 			else {

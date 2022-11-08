@@ -98,7 +98,7 @@
 					for the preparation of their theory and practical examination. Along with this some additional features </p>
 				</div>
 				<div class="col-lg-4 me-auto">
-					<p class="lead"> are also provided like students can sell their obsolete things to the needy student. We are looking forward to add more features in future!! Any valuable suggestion will be appreciated to improve
+					<p class="lead"> like students can sell their obsolete things to the needy student. We are looking forward to add more features in future!! Any valuable suggestion will be appreciated to improve
 					the website.</p>
 				</div>
 			</div>
