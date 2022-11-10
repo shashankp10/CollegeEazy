@@ -38,7 +38,7 @@ public class Registration extends HttpServlet {
 			pst.setString(3, branch);
 			pst.setString(4, semester);
 			pst.setString(5, umobile);
-			pst.setString(6, umobile);
+			pst.setString(6, upwd);
 			
 			int rowCount = pst.executeUpdate();
 			dispatcher = request.getRequestDispatcher("registration.jsp");
