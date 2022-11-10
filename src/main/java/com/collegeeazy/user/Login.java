@@ -29,7 +29,7 @@ public class Login extends HttpServlet {
     		try {
     			Class.forName("com.mysql.jdbc.Driver");
     			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/collegeeazy?useSSL=false","root","rishu@123#");
-    			PreparedStatement pst = con.prepareStatement("select * from students where uenroll = ? and upwd = ?");
+    			PreparedStatement pst = con.prepareStatement("select * from users where uenroll = ? and upswd = ?");
     			pst.setString(1, uenroll);
     			pst.setString(2, upwd);
     			  			 
