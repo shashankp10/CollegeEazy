@@ -1,4 +1,4 @@
-package com.collegeeazy.registration;
+package com.collegeeazy.attendance;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class SellBuy
+ * Servlet implementation class Attendance
  */
-@WebServlet("/SellBuy")
-public class SellBuy extends HttpServlet {
+@WebServlet("/Attendance")
+public class Attendance extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public SellBuy() {
+    public Attendance() {
         super();
         // TODO Auto-generated constructor stub
     }

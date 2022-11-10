@@ -45,6 +45,18 @@
 									placeholder="Enter your Branch" />
 								
 							</div>
+							<div class="form-group">
+								<label for="semester"><i class="zmdi zmdi-account material-icons-name"></i></label>
+								<input type="text" name="semester" id="semester"
+									placeholder="Enter your Semester (in numeric)" />
+								
+							</div>
+							<div class="form-group">
+								<label for="contact"><i class="zmdi zmdi-account material-icons-name"></i></label>
+								<input type="text" name="contact" id="contact"
+									placeholder="Enter your Contact no." />
+								
+							</div>
 						<!-- 	<div class="form-group">
 								<label for="email"><i class="zmdi zmdi-email"></i></label> <input
 									type="email" name="email" id="email" placeholder="Enter your Email" />
@@ -56,12 +68,8 @@
 							
 							</div>
 							
-							 <div class="form-group">
-								<label for="contact"><i class="zmdi zmdi-lock-outline"></i></label>
-								<input type="text" name="contact" id="contact"
-									placeholder="Enter your Contact no." />
-								
-							</div>
+							 
+							
 											<!-- <div class="form-group">
 								<input type="checkbox" name="agree-term" id="agree-term"
 									class="agree-term" /> <label for="agree-term"
@@ -95,7 +103,6 @@
 	<link rel="stylesheet" href="alert/dist/sweetalert.css">
 
 <script type="text/javascript">
-
 	var status = document.getElementById("status").value;
 	if(status=="success"){
 		swal("Congrats","AccountCreated Successfully!!","success");

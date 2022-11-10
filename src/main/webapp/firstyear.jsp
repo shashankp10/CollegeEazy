@@ -92,7 +92,7 @@
             <li class="dropdown dropend">
                 <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CSE</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -102,7 +102,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AI & ML</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -112,7 +112,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AI & DS</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -122,7 +122,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ME</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -132,7 +132,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EEE</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -142,7 +142,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CE</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -152,7 +152,7 @@
              	</ul>
              	<a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ECE</a>
                 <ul class="dropdown-menu" aria-labelledby="multilevelDropdownMenu1">
-                    <li><a class="dropdown-item" href="firstyear.jsp">Semester 1 & 2</a></li>
+                    <li><a class="dropdown-item" href="#">Semester 1 & 2</a></li>
                    	<li><a class="dropdown-item" href="#">Semester 3</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 4</a></li>
            	        <li><a class="dropdown-item" href="#">Semester 5</a></li>
@@ -185,7 +185,7 @@
 			
 			
 			<h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
-							<%=session.getAttribute("branch") %> - Subjects</h2>
+							<%=session.getAttribute("branch") %> - Subjects (First Year)</h2>
 			<!-- Icon Divider-->
 			<div class="divider-custom">
 				<div class="divider-custom-line"></div>
@@ -200,46 +200,75 @@
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal1" >
-						<h2><br><br>Data Structure</h2>
+						<h2><br><br>Programming in C</h2>
 					</div>
 				</div>
 				<!-- Subject 2-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal2">
-						<h2><br><br>Object-Orientated Programming</h2>
+						<h2><br><br>Applied - Chemistry</h2>
 					</div>
 				</div>
 				<!-- Subject 3-->
 				<div class="col-md-6 col-lg-4 mb-5">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal3">
-						<h2><br><br>Discrete Mathematics</h2>
+						<h2><br><br>Applied - Physics</h2>
 					</div>
 				</div>
 				<!-- Subject 4-->
 				<div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal4">
-						<h2><br><br>Computational Methods</h2>
+						<h2><br><br>Electrical Science</h2>
 					</div>
 				</div>
 				<!-- Subject 5-->
 				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal5">
-						<h2><br><br>Digital Logic and Computer Design</h2>
+						<h2><br><br>Environmental Studies</h2>
 					</div>
 				</div>
 				<!-- Subject 6-->
 				<div class="col-md-6 col-lg-4">
 					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
 						data-bs-target="#portfolioModal6">
-						<h2><br><br>Indian Knowledge System</h2>
+						<h2><br><br>Applied Mathematics - I</h2>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Subject 7-->
+				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
+						data-bs-target="#portfolioModal7">
+						<h2><br><br>Indian Constitution & Human Ethics</h2>
+					</div>
+				</div>
+				<!-- Subject 8-->
+				<div class="col-md-6 col-lg-4">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
+						data-bs-target="#portfolioModal8">
+						<h2><br><br>Manufacturing Process</h2>
+					</div>
+				</div>
+		
+		<!-- Subject 9-->
+				<div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
+						data-bs-target="#portfolioModal9">
+						<h2><br><br>Engineering Mechanics</h2>
+					</div>
+				</div>
+		<!-- Subject 10-->
+				<div class="col-md-6 col-lg-4">
+					<div class="portfolio-item mx-auto" data-bs-toggle="modal"
+						data-bs-target="#portfolioModal10">
+						<h2><br><br>Applied Mathematics - II</h2>
+					</div>
+				</div>
 	</section>
 	<!-- Subjects -->
 	<!-- Subject 1-->
@@ -559,9 +588,261 @@
 			</div>
 		</div>
 	</div>
-	<!-- Portfolio Modal 6-->
+	<!-- Subject- 6-->
 		<div class="portfolio-modal modal fade" id="portfolioModal6"
 		tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<button class="btn-close" type="button" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center pb-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<!-- Subject Modal - Title-->
+								<h2
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Indian Knowledge System</h2>
+								<!-- Icon Divider-->
+								<div class="divider-custom">
+									<div class="divider-custom-line"></div>
+									<div class="divider-custom-icon">
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="divider-custom-line"></div>
+								</div>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Subject-7-->
+		<div class="portfolio-modal modal fade" id="portfolioModal7"
+		tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<button class="btn-close" type="button" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center pb-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<!-- Subject Modal - Title-->
+								<h2
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Indian Knowledge System</h2>
+								<!-- Icon Divider-->
+								<div class="divider-custom">
+									<div class="divider-custom-line"></div>
+									<div class="divider-custom-icon">
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="divider-custom-line"></div>
+								</div>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Subject-8-->
+		<div class="portfolio-modal modal fade" id="portfolioModal8"
+		tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<button class="btn-close" type="button" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center pb-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<!-- Subject Modal - Title-->
+								<h2
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Indian Knowledge System</h2>
+								<!-- Icon Divider-->
+								<div class="divider-custom">
+									<div class="divider-custom-line"></div>
+									<div class="divider-custom-icon">
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="divider-custom-line"></div>
+								</div>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Subject-9-->
+		<div class="portfolio-modal modal fade" id="portfolioModal9"
+		tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
+		<div class="modal-dialog modal-xl">
+			<div class="modal-content">
+				<div class="modal-header border-0">
+					<button class="btn-close" type="button" data-bs-dismiss="modal"
+						aria-label="Close"></button>
+				</div>
+				<div class="modal-body text-center pb-5">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-lg-8">
+								<!-- Subject Modal - Title-->
+								<h2
+									class="portfolio-modal-title text-secondary text-uppercase mb-0">Indian Knowledge System</h2>
+								<!-- Icon Divider-->
+								<div class="divider-custom">
+									<div class="divider-custom-line"></div>
+									<div class="divider-custom-icon">
+										<i class="fas fa-star"></i>
+									</div>
+									<div class="divider-custom-line"></div>
+								</div>
+								<!--Subject - Text-->
+								<div class="dropdown">
+  									<button class="btn btn-secondary dropdown-toggle" type="button"
+  										 data-bs-toggle="dropdown" aria-expanded="false"> YouTube Channels </button>
+  									<ul class="dropdown-menu">
+   										 <li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+  									</ul>
+								</div>
+								<br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Lecture Notes</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Books PDFs</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+                               <br><br>
+								<div class="dropdown">
+ 									 <button class="btn btn-secondary dropdown-toggle" type="button"
+ 									 	 data-bs-toggle="dropdown" aria-expanded="false">Other Links</button>
+  									<ul class="dropdown-menu">
+    									<li><a class="dropdown-item" href="#">Currently Unavailable</a></li>
+                                    </ul>
+                               </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Subject-10-->
+		<div class="portfolio-modal modal fade" id="portfolioModal10"
+		tabindex="-1" aria-labelledby="portfolioModal10" aria-hidden="true">
 		<div class="modal-dialog modal-xl">
 			<div class="modal-content">
 				<div class="modal-header border-0">

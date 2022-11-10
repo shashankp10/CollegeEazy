@@ -1,4 +1,7 @@
-
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="com.collegeeazy.user.DbConnect"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,67 +62,53 @@
 			<div class="divider-custom-line"></div>
 		</div>
 </header>
-<div class = "container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="card">
-				<div class="card-body">
-				<% 
-					String msg = (String)session.getAttribute("msg");
-					if(msg!=null){
-					%>
-					<h4 class = "text-center"><%=msg %></h4>	
-					<%
-					session.removeAttribute("msg");
-					}
-					%>
-					
-					<form method="post" action="upload" enctype="multipart/form-data">
-						<div class="mb-3">
-							<label>Notes</label><input type="file" name="files" class="form-control">
-						</div>
-						<div class="mb-3">
-							<label>Subject</label><input type="text" name="subject " class="form-control">
-						</div>
-						<div class="mb-3">
-							<label>Uploaded Note's Description</label><input type="text" name="description" class="form-control">
-						</div>
-						<div class="text-center">
-							<button class="btn btn-primary">Upload</button>
-						</div>
-					</form>
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<p class="text-center fs-3">Image Upload</p>
+
+						<%
+						String msg = (String) session.getAttribute("msg");
+						if (msg != null) {
+						%>
+						<h4 class="text-center text-success"><%=msg%></h4>
+						<%
+						session.removeAttribute("msg");
+						}
+						%>
+
+						<form method="post" action="upload" enctype="multipart/form-data">
+							<div class="mb-3">
+								<label>Image</label> <input type="file" name="files"
+									class="form-control">
+							</div>
+
+							<div class="mb-3">
+								<label>Remark</label> <input type="text" name="remark"
+									class="form-control">
+							</div>
+							<div class="text-center">
+								<button class="btn btn-primary">Upload</button>
+							</div>
+
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+
+
+
+
 	</div>
-	<table class="table - 5">
-		<thead>
-			<tr>
-  				<th scope="col">#</th>
-  				<th scope="col">File Type</th>
-	 			<th scope="col">Subject</th>
-  				<th scope="col">Description</th>
-			</tr>
-		</thead>
-<tbody>
-		<%
-		Connection conn = DbConnect.getConn();
-		PreparedStatement ps = conn.prepareStatement("select * from Notes");
-		ResultSet rs = ps.executeQuery();
-		while(rs.next()){
-		%>
-		<tr>
-  			<th scope="row">
-  			<img alt="" src="images/">
-  			</th>
- 		 	<td>Mark</td>
-</tr>
-		
-		}
-		%>
-	</tbody>
-</table>
-</div>
+
+
+
+
+
 	<!-- Footer-->
 	<footer class="footer text-center">
 		<div class="container">
@@ -142,3 +131,5 @@
 	<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>
+
+

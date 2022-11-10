@@ -1,4 +1,4 @@
-package com.collegeeazy.registration;
+package com.collegeeazy.user;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -25,23 +25,25 @@ public class Registration extends HttpServlet {
 		String umobile = request.getParameter("contact");
 		String enrollment = request.getParameter("enrollment");
 		String branch = request.getParameter("branch");
+		String semester = request.getParameter("semester");
 		RequestDispatcher dispatcher = null;
 		Connection con = null;
 	 	// database code
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/collegeeazy?useSSL=false","root","rishu@123#");
-			PreparedStatement pst = con.prepareStatement("insert into students(uname,uenroll,ubranch,upwd,umobile) values(?,?,?,?,?)");
+			PreparedStatement pst = con.prepareStatement("insert into users(uname,uenroll,ubranch,usem,ucontact,upswd) values(?,?,?,?,?,?)");
 			pst.setString(1, uname);
 			pst.setString(2, enrollment);
 			pst.setString(3, branch);
-			pst.setString(4, upwd);
+			pst.setString(4, semester);
 			pst.setString(5, umobile);
+			pst.setString(6, umobile);
 			
 			int rowCount = pst.executeUpdate();
 			dispatcher = request.getRequestDispatcher("registration.jsp");
 			if(rowCount>0 && uname!=null && upwd!=null && umobile!=null 
-					&& enrollment!=null && branch!=null) {
+				  	&& enrollment!=null && branch!=null && semester!=null) {
 				request.setAttribute("status","success");	
 			}
 			else {

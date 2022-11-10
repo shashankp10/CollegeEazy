@@ -1,4 +1,4 @@
-package com.collegeeazy.registration;
+package com.collegeeazy.user;
 
 import java.io.IOException;
 import java.io.PrintWriter;
